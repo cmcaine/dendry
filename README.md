@@ -8,6 +8,7 @@
 This is a new project aimed at developing a suite of command line
 tools and a common file format for hypertext interactive fiction.
 
+The best way to get started with dendry is to read [smhwr's guide](https://smwhr.notion.site/Getting-started-with-Dendry-188e7e39a961497fb2d0a0deee0c21a0).
 
 To install:
 
@@ -15,7 +16,7 @@ To install:
 
 To create a new project:
 
-`dendry new`
+`dendry new [project name]`
 
 To create a playable html/js from a dendry project:
 
@@ -131,4 +132,17 @@ Including javascript in `view-if`: `{! return ((Q['a'] || 0)===(Q['b'] || 0)); !
 
 ## Debugging
 
-In the browser, the state is stored as `dendryUI.dendryEngine.state`. Qualities are at `dendryUI.dendryEngine.state.qualities`.
+In the browser, the state is stored as `dendryUI.dendryEngine.state`. Qualities are at `dendryUI.dendryEngine.state.qualities`. You can use these variables in the browser console to inspect or alter the current state of the game.
+
+
+## Example projects with source code
+
+Given the current sparsity of the documentation, a good way to learn dendry is to read through the source code of existing games.
+
+[Bee by Emily Short](https;//github.com/aucchen/bee)
+
+[Pageant by Autumn Chen](https;//github.com/aucchen/pageant)
+
+[New Year's Eve, 2019 by Autumn Chen](https;//github.com/aucchen/new-years-eve-2019)
+
+For a list of currently known dendry projects, see [IFDB](https://ifdb.org/search?searchfor=system:dendry).
